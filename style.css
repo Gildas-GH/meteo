@@ -1,0 +1,26 @@
+.collapsible-header {
+	display: block;
+	background: rgba(255, 255, 255, 0.8)
+}
+
+.collapsible-body {
+	background: rgba(255, 255, 255, 0.8)
+}
+
+form#searchForm button .progress {
+	display: none;
+	top: 8px;
+}
+form#searchForm button.disabled .progress {
+	display: inline-block;
+}
+
+#meteo table tr i {
+	font-size: 17px;
+	margin-right: 10px;
+	min-width: 25px;
+}
+
+#meteo table td::first-letter {
+	text-transform: capitalize;
+}

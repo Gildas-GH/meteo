@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aide - Météo - Ecobosto</title>
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Météo">
+    <meta name="application-name" content="Météo">
+    <meta name="msapplication-TileColor" content="#b71c1c">
+    <meta name="theme-color" content="#b71c1c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:locale" content="fr_fr">
+	
+	<link rel="stylesheet" href="weather-icons/css/weather-icons.min.css">
+	<link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.becauseofprog.fr/v2/libs/iconify.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.becauseofprog.fr/v2/libs/materialize/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.becauseofprog.fr/v2/projects/blog-v3/bundle.css" />
+</head>
+
+<body>
+
+	<!-- Mobile drawer -->
+	<ul id="mobile-demo" class="sidenav">
+		<li class="header">
+		  <div class="user-view">
+			<div class="background primary"></div>
+			<a href="index.html">
+			  <img
+				width="64px"
+				src="https://i.cdn.becauseofprog.fr/ecobosto.fr/static/images/logoEcobosto.png?w=64"
+				alt="Logo BecauseOfProg"/>
+			</a>
+			<span class="white-text name">Météo</span>
+			<span class="white-text email">Ecobosto</span>
+		  </div>
+		</li>
+		<li><a href="help.html"><i class="material-icons left"><span class="iconify" data-icon="mdi-information"></span></i>Aide</a></li>
+	</ul>
+
+	<div class="navbar-fixed topbar">
+		<nav class="primary"></nav>
+	</div>
+	
+	<div class="navbar-fixed">
+		<nav>
+		  <div class="nav-wrapper">
+			<a href="index.html" class="logo brand-logo primary--text">
+			  &nbsp;Météo 🌤
+			</a>
+			<a href="#!" data-target="mobile-demo" class="sidenav-trigger" style="display: initial;">
+			  <i class="material-icons">
+				<span class="iconify primary--text" data-icon="mdi-menu"></span>
+			  </i>
+			</a>
+			<ul class="row right hide-on-med-and-down">
+			  <div id='navbar-links-container'>
+				<li class="waves-effect waves-light">
+				  <a href="help.html" class="primary--text">
+					<i class="material-icons left">
+					  <span class="iconify" data-icon="mdi-information"></span>
+					</i>
+					Aide
+				  </a>
+				</li>
+			  </div>
+			</ul>
+		  </div>
+		</nav>
+	</div>
+
+	<div class="welcome parallax-container h250px">
+		<div class="parallax primary"></div>
+		<h4 class="header white-text">
+		  <i class="material-icons md-48"><span class="iconify" data-icon="mdi:weather-partly-snowy-rainy" data-inline="false"></span></i>
+		  <br>
+		  <span id="pageTitle" class="white-text">Aide - Météo - Ecobosto</span>
+		</h4>
+	</div>
+
+	<div class="container row carousel-bop-homepage-title">
+		<div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <h5 class="primary--text">Recherche d'une ville</h5>
+        
+                    <p>
+                        Vous aurez peut être remarqué que Brest était en Biélorussie ...<br />
+                        Pour avoir la météo de la bonne ville, vous pouvez ajouter le code pays après le nom de la ville.<br />
+                        <br />
+                        Exemple : "Brest" devient "Brest,fr"<br />
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h5 class="primary--text">Il ne se passe rien quand je soumet ma ville</h5>
+					<p>
+						Assurez vous d'utiliser un navigateur web récent et à jour, qui supporte les dernières normes
+						Javascript. Si vous utilisez Internet Explorer il est fort possible que ce site ne fonctionne
+						pas pour vous.<br/>
+						Désolé.<br/>
+					</p>
+                </div>
+            </div>
+        
+            
+        
+            
+		</div>
+	</div>
+
+	<footer class="page-footer primary">
+		<div class="container shadow" style="padding-bottom: 20px;">
+		  <a class="grey-text text-lighten-4">
+			© 2021 Gildas Garin-Hameline et Thomas Cloarec
+		  </a>
+		  <a class="right grey-text text-lighten-4" href="help.html">
+			Aide
+		  </a>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="https://cdn.becauseofprog.fr/v2/libs/materialize/materialize.min.js"></script>
+	<script>
+		let app;
+		document.addEventListener('DOMContentLoaded', () => {
+			var elems = document.querySelectorAll('.sidenav');
+  			var instances = M.Sidenav.init(elems);
+		});
+	</script>
+</body>
+
+</html>
